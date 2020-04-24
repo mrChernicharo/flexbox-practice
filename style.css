@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #e6ecf0;
+  font-family: 'Helvetica neue', 'Helvetica', Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+input, 
+button{
+  outline: none;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header#main-header {
+  height: 46px;
+  background:  #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 3;
+}
+header#main-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header#main-header nav ul {
+  display: flex;
+  list-style: none;
+}
+header#main-header nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 13px;
+  color: #667580;
+  font-weight: bold;
+
+  margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child{
+  margin-left: 10px;
+}
+
+header#main-header nav ul li img {
+  margin-right: 7px;
+  width: 22px;
+}
+
+img#logo{
+  width: 32px;
+
+}
+
+header div.side {
+  display: flex;
+}
+
+header div.side img{
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+header div.side button{
+  height: 34px;
+  width: 90px;
+  background: #39b9e3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+  border: 0;
+}
+header div.side input {
+  width: 200px;
+  height: 34px;
+  border: 1px solid #e6ecf0;
+  padding: 0 30px 0 12px;
+  border-radius: 16px;
+  color: #667581;
+  font-size: 12px;
+
+  background: #f5f8fa url("/tweeter/assets/magnifying-glass.svg") no-repeat 168px center;
+  background-size: 20px;
+}
+
+header#main-header div.side input img{
+  width: 24px;
+} 
+
+div.banner{
+  height: 380px;
+  width: 100%;
+  background: #3bb9e3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+div.bar{
+  height: 59px;
+  background: #FFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+div.bar .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 22%;
+
+}
+
+div.bar .content ul {
+  display: flex;
+  list-style: none;
+}
+div.bar .content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+div.bar .content ul li.active::after{
+  content: '';
+  height: 2.5px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background: #3bb9e3;
+}
+
+div.bar .content ul li span{
+  color: #607580;
+  font-size: 12px;
+  font-weight: bold;
+}
+div.bar .content ul li strong{
+  color: #607580;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+div.bar .content ul li.active strong{
+  color: #3bb9e3;
+}
+
+div.actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.actions img{
+  width: 18px;
+  height: 18px;
+}
+div.actions .content button{
+  width: 90px;
+  height: 40px;
+  padding: 5px;
+  color: #39b9e3;
+  border: 2px solid #3bb9e3;
+  font-weight: bold;
+  font-size: 14px;
+  background: #fff;
+  border-radius:20px 
+}
+div.actions .content button:hover{
+  color: #fff;
+  background: #39b9e3;
+}
+/*   */
+
+div.content-wrapper {
+  display: flex;
+  width: 300px;
+}
+div.content-wrapper aside.profile{
+  padding-left: 12px;
+  width: 260px;
+} 
+
+div.content-wrapper aside.profile img#avatar{
+  width: 200px;
+  border: 5px solid #fff;
+  margin-top: -130px;
+  border-radius: 50%;
+
+} 
+div.content-wrapper aside.profile h1{
+  font-size: 22px;
+  color: #1f2226;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+div.content-wrapper aside.profile span{
+  font-size: 16px;
+  color:#667581;
+  margin-top: 118px;
+} 
+
+div.content-wrapper aside.profile p{
+  font-size: 13px;
+  color: #1f222c;
+  margin-top: 14px;
+} 
+div.content-wrapper aside.profile ul {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+div.content-wrapper aside.profile ul li {
+  font-size: 15px;
+  color:#667581;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: start;
+  margin: 7px 3px 0 0;
+
+}
+div.content-wrapper aside.profile ul li img{
+  width: 18px;
+  margin-right: 10px;
+}
